@@ -1,10 +1,10 @@
 # Vertical Jump Analytics Dashboard
 
-A web-based dashboard for tracking and visualizing vertical jump performance data.
+A web-based dashboard for tracking and visualizing vertical jump performance data for Altamont Lutheran Interparish School.
 
 ## Demo
 
-View the live demo: [https://yourusername.github.io/repository-name/](https://yourusername.github.io/repository-name/)
+View the live demo: [https://ndominator.github.io/BYOA-VertJump/](https://ndominator.github.io/BYOA-VertJump/)
 
 ## Features
 
@@ -47,4 +47,4 @@ The dashboard expects CSV files with the following columns:
 - 90% PR
 - Date
 - Set 1 (3 jumps)
-- Set 2 (3 jumps) 
+- Set 2 (3 jumps)
