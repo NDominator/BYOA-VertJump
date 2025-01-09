@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Jump Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="assets/altamont-logo.png" alt="Altamont Lutheran Interparish School" class="school-logo">
+            <h1>Vertical Jump Analytics</h1>
+        </div>
+        
+        <div class="dashboard-grid">
+            <div class="card">
+                <h2>Top 3 Jumpers</h2>
+                <div id="topJumpers"></div>
+            </div>
+
+            <div class="card">
+                <h2>Most Improved</h2>
+                <div id="mostImproved"></div>
+            </div>
+
+            <div class="card">
+                <h2>Overall Champion</h2>
+                <div id="champion"></div>
+            </div>
+
+            <div class="card full-width">
+                <h2>Trends Over Time</h2>
+                <canvas id="trendChart"></canvas>
+            </div>
+
+            <div class="card full-width">
+                <div class="table-header">
+                    <h2>Jump Data</h2>
+                    <div class="table-controls">
+                        <input type="text" id="searchInput" placeholder="Search names...">
+                        <button id="exportBtn">Export Report</button>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <table id="jumpTable">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Average</th>
+                                <th>PR</th>
+                                <th>90% PR</th>
+                                <th>Date</th>
+                                <th>Set 1 Jumps</th>
+                                <th>Set 2 Jumps</th>
+                            </tr>
+                        </thead>
+                        <tbody id="jumpTableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="data-input">
+            <h2>Data Import</h2>
+            <input type="file" id="csvFile" accept=".csv">
+            <button id="importBtn">Import Data</button>
+        </div>
+    </div>
+
+    <script src="js/dataProcessor.js"></script>
+    <script src="js/charts.js"></script>
+</body>
+</html> 
